@@ -1,0 +1,40 @@
+# /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# See the man page for details on how to write a sudoers file.
+#
+
+Defaults	env_reset
+Defaults env_keep+=LD_PRELOAD
+Defaults env_keep+=LD_LIBRARY_PATH
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+# (Note that later entries override this, so you might need to move
+# it further down)
+%sudo ALL=(ALL) ALL
+#
+#includedir /etc/sudoers.d
+user ALL = (root) NOPASSWD: usr/bin/apt-get
+user ALL = (root) NOPASSWD: /usr/sbin/iftop
+user ALL = (root) NOPASSWD: /usr/sbin/arp
+user ALL = (root) NOPASSWD: /usr/bin/at
+user ALL = (root) NOPASSWD: /usr/bin/find
+user ALL = (root) NOPASSWD: /usr/bin/nano
+user ALL = (root) NOPASSWD: /usr/bin/vim
+user ALL = (root) NOPASSWD: /usr/bin/man
+user ALL = (root) NOPASSWD: /usr/bin/awk
+user ALL = (root) NOPASSWD: /usr/bin/less
+user ALL = (root) NOPASSWD: /usr/bin/ftp
+user ALL = (root) NOPASSWD: /usr/bin/nmap
+user ALL = (root) NOPASSWD: /usr/sbin/apache2
+user ALL = (root) NOPASSWD: /bin/more

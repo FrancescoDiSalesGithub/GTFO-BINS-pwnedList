@@ -1,7 +1,9 @@
 # GTFO-BINS-pwnedList
-sudoers file in which there are all the possible privilege escalation using sudo privilege with gtfo bins
+sudoers file in which there are all the possible privilege escalations using sudo privilege with gtfo bins
 
 https://gtfobins.github.io/
+
+Note: It's suggested to run this script on a testing system rather than a production system
 
 ## How-to Install
 

@@ -18,12 +18,6 @@ Defaults env_keep+=LD_LIBRARY_PATH
 # User privilege specification
 root	ALL=(ALL) ALL
 
-# Allow members of group sudo to execute any command
-# (Note that later entries override this, so you might need to move
-# it further down)
-%sudo ALL=(ALL) ALL
-#
-#includedir /etc/sudoers.d
 user ALL=(root) NOPASSWD:usr/bin/apt-get
 user ALL=(root) NOPASSWD:/usr/sbin/iftop
 user ALL=(root) NOPASSWD:/usr/sbin/arp
@@ -105,5 +99,10 @@ user ALL=(root) NOPASSWD:/bin/gzip
 user ALL=(root) NOPASSWD:/bin/dmesg
 user ALL=(root) NOPASSWD:/bin/mount
 
-
+# Allow members of group sudo to execute any command
+# (Note that later entries override this, so you might need to move
+# it further down)
+%sudo ALL=(ALL) ALL
+#
+#includedir /etc/sudoers.d
 
